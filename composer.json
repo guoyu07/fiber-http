@@ -1,0 +1,20 @@
+{
+    "name": "fiberphp/http",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../fiber-core"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Fiber\\": "./src"
+        }
+    },
+    "require": {
+        "fiberphp/core": "dev-master",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
