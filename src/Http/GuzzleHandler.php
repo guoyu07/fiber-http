@@ -246,6 +246,7 @@ class GuzzleHandler
         if ($headers == false) {
             throw new ConnectException(sprintf("Could not read response from host '%s'", $uri->getHost()), $request);
         }
+        throw new \Exception('xx');
 
         $hdrs = explode("\r\n", $headers);
         $headers = \GuzzleHttp\headers_from_lines($hdrs);
